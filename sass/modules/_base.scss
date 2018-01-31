@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%; //this defines what 1 rem is 10px/16px
+	//always the larger one before the smaller one so that the last mediaq be added
+ 
+  	// @include respond(tab-land) {//les than 1200?
+  	// 	font-size: 56.25%;//9px
+  	// }
+
+  	//  @include respond(tab-port) {//less than 900?
+  	// 	font-size: 50%;//8px
+  	// }
+
+  	// @include respond(big-desktop) {
+  	// 	font-size: 75%;//12px
+  	// }
+  }
+
+body {
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+   // @include respond(tab-port) {//less than 900?
+  	// 	padding: 0;
+  	// }
+}
+
+::selection {
+  background-color: red;
+  color:white;
+}
+

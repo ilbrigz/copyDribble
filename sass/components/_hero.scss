@@ -1,0 +1,145 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-end;
+	height: 70rem;
+	padding: 8rem 8rem 2rem 8rem;
+  background-image: radial-gradient(farthest-corner at 70% 50%,
+      $colorLight 0%,$colorPrimary 60%, $colorDark 100%);
+  position: relative;
+  z-index: -2;
+  &__background {
+  	height: 80%;
+  	bottom: 40%;
+  	position: absolute;
+  	right: 0;top:12%;
+  	z-index: -3;
+  }
+  
+&__btnCont--top {
+	button {
+		font-family:inherit;
+		border: none;
+		padding: .5rem 1rem;
+		background-color: rgba(0,0,0,.1);
+		font-size: 1rem;
+		&:first-child {
+			margin-right: 1rem;
+		}
+
+
+	}
+}
+&__textCont {
+	color: #fff;
+	h1 {
+		margin-left: -.6rem;
+		font-size: 10rem;
+	}
+	p {
+		width: 40%;
+	}
+}
+&__buttonCont {
+	width: 100%;
+	margin-top: 8rem;
+	display: flex;
+	flex-basis: inherit;
+
+	button {
+		display: flex;
+		align-items: center;
+
+		font-family:inherit;
+		border: none;
+		padding: 1.5rem 3rem;
+		background-color: rgba(250,250,250,.3);
+		font-size: 1rem;
+		&:not(:last-child) {
+			margin-right: 2rem;
+		}
+		&:last-child {
+			margin-left: auto;
+		
+		}
+		& span {
+			margin-left: 1rem;
+		}
+	}
+}
+&__icon {
+	height: 2rem;
+	width: 2rem;
+	fill: currentColor;
+}
+&__nav {
+	align-self: stretch;
+	ul {
+		width: 80%;
+		margin-top: 15rem;
+		display: flex;
+		justify-content: space-between;
+		color: #fff;
+		li {
+			cursor: pointer;
+			position: relative;
+			text-transform: uppercase;
+		}
+	}
+}
+&__btnCenter {
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	padding: 3rem !important;
+	background-color:  rgba(250,250,250,.8);
+	&::before {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 125%;
+			height: 125%;
+			top: -12.5%;
+			left: -12.5%;
+			// top: 50%;
+			// bottom: 50%;
+			// transform: translate(-50%,-50%);
+			border-radius: 50%;
+			background-color: rgba(250,250,250,.3);
+			z-index: -1;
+			
+	}
+	&::after {
+			content: "";
+			display: block;
+			position: absolute;
+			width: 150%;
+			height: 150%;
+			top: -25%;
+			left: -25%;
+			// top: 50%;
+			// bottom: 50%;
+			// transform: translate(-50%,-50%);
+			border-radius: 50%;
+			background-color: rgba(250,250,250,.1);
+			z-index: -2;
+			}
+	svg {
+		margin: 0;
+	}
+
+}
+}
+.active::before {
+	display: block;
+	content: " ";
+	margin-left: -5%;
+	width: 110%;
+	position: absolute;
+	border-top: 2px solid #fff;
+	bottom:-1rem;
+	color: red;
+}
+
+

@@ -1,0 +1,45 @@
+.mainNav {
+	background-color: #fff;
+	flex-basis: 20%;
+	flex-direction: column;
+	padding: 1rem;
+	
+	ul {
+		margin-left: 20%;
+	}
+	li {
+		padding: 2rem;
+	}
+}
+.logoCont {
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 3rem 0;
+	.logo__img {
+	width: 3rem;
+	height: 3rem;
+	}
+	.logo__text {
+		font-size: 1.5rem;
+		font-weight: 700;
+	}
+}
+
+
+.item_title {
+	color: #ccc;
+	font-weight: 700;
+	margin-left: -4rem;
+	margin-bottom: -2rem;
+}
+.nav__icon {
+	width: 2rem;
+	height: 2rem;
+	margin-right: 2rem;
+}
+.nav__item {
+	display: flex;
+	align-items: center;
+}

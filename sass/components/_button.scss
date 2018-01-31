@@ -1,0 +1,19 @@
+button {
+		font-family:inherit;
+		border: none;
+		border-radius: 3rem;
+		color: #fff;
+		text-transform: uppercase;
+		cursor: pointer;
+		&:focus {
+			outline: thin dotted;
+		}
+	}
+
+.btn-black {
+	background-color: rgba(#2C3049, .8) !important;
+}
+.btn-round {
+	padding: 1.5rem !important;
+	border-radius: 50% !important;
+}

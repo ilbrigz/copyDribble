@@ -1,0 +1,90 @@
+.topRanks {
+	padding: 8rem 12rem 1rem 12rem;
+	background-color: #eee;
+	&__header {
+		color: #757575;
+	}
+	&__column:first-child {
+		padding-top: 0 !important;
+		padding-bottom: 0 !important;
+		background-color: transparent !important;
+		box-shadow: none !important;
+		margin-bottom: 0 !important;
+
+	}
+	&__column {
+		background-color: rgba(#fafafa, .5);
+		display:flex;
+		padding: .5rem 1rem;
+		border-radius: 5px;
+		align-items: center;
+		// border: 1px solid #fff;
+
+    	&:not(:last-child) {
+    		margin-bottom: .9rem;
+    	}
+    	div:not(:last-child) {
+			margin-right: 2rem;
+    	}
+		&Img {
+			height: 3rem;
+			width: 3rem;
+			border-radius: .4rem;
+			overflow: hidden;
+			img {
+				height: 3rem;
+				width: 3rem;
+				object-fit: cover;
+			}
+
+		}
+		&TrackNum {
+			font-weigth: 700;
+			flex-grow: 1;
+			img {
+
+				height: 1.3rem;
+				width: 1.3rem;
+				object-fit: cover;
+
+			
+			}
+		}
+		&Title {
+			font-weight:700;
+			flex-grow: 2;
+			flex-basis: 10%;
+			span:last-child {
+				padding-left: .5rem;
+
+
+			}
+
+		}
+		&Album {
+			flex-grow: 2;
+			flex-basis: 5%;
+		}
+		&Time {
+			flex-grow: 1;
+			flex-basis: 5%;
+
+		}
+		&Plays {
+			flex-basis: 5%;
+			span:not(:last-child) {
+				font-weight: 700;
+				letter-spacing: .2rem;
+				margin-right: 1rem;
+
+			}
+			flex-grow: 1;
+
+		}
+		&Bull {
+			letter-spacing: .1rem;
+			flex-basis: 2%;
+		}
+
+	}
+}
